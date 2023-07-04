@@ -1,0 +1,137 @@
+/* Estilos generales */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #36e9b0;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.container {
+  margin-top: 100px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos de la sección de inicio de sesión */
+#login {
+  width: 300px;
+  height: auto;
+  top: 50px;
+  margin-top: 100px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.6);
+}
+
+.loginform label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.loginform input[type="text"],
+.loginform input[type="password"] {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginform button {
+  display: block;
+  width: auto;
+  padding: 10px;
+  background-color: #4055f7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.incorrect_user,
+.correct_user {
+  display: block;
+  margin: 0 auto;
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos de la sección de saldo y transacciones */
+#balance {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.6);
+}
+
+.balance-body {
+  margin-bottom: 10px;
+}
+
+.balance-title {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.balance-text {
+  color: #666;
+}
+
+.button-balance {
+  text-align: center;
+}
+
+.button-balance button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#depositmoneys {
+  border-radius: 3px;
+  height: 30px;
+}
+
+#withdrawmoneys {
+  border-radius: 3px;
+  width: auto;
+  height: 30px;
+  margin: 0 auto;
+}
+/* Estilos de la sección de información */
+
+
+/* Estilos de mensajes de error */
+.error-message {
+  color: #f44336;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilos para hacerlo responsive */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+}

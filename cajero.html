@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cajero.css" rel="stylesheet">
+    <title>Cajero automatico</title>
+</head>
+
+<body>
+    <div id="login">
+        <h1>Inicia Sesion</h1>
+        <main class="loginform" id="loginform">
+            <label for="usuario">Usuario</label>
+            <input id="usuario" type="text" name="usuario" placeholder="Usuario">
+
+            <label for="password">Contraseña</label>
+            <input id="password" type="password" placeholder="Contraseña" name="password">
+
+            <button onclick="enter()">Ingresar</button>
+
+        </main>
+        <main class="incorrect_user" id="incorrect_user">
+
+            <strong class="text">El usuario o la contraseña son incorrectas</strong>
+
+        </main>
+        <main class="correct_user" id="correct_user">
+
+            <strong class=" text">Validacion exitosa</strong>
+
+        </main>
+        
+    </div>
+    
+    
+    <div id="balance">
+      <div class="information">
+        <div class="balance-information">
+            <div class="balance -bod-information">
+              <h1><span id="info">Selecciona una opción</span></h1>
+            </div>
+        <div class="balance-body">
+            <h5 class="balance-title">CONSULTAR SALDO</h5>
+            <p class="balance-text"><strong><span id="nombre-usuario"></span> </strong>consulta cual es el saldo actual de tu cuenta</p>
+        </div>
+        <div class="button-balance">
+            <button id="consultar">Consultar</button>
+        </div>
+
+        <div class="balance-body">
+            <h5 class="balance-title">CONSIGNAR</h5>
+            <p class="balance-text"><strong><span id="nombre-usuario"></span></strong>Depositar dinero</p>
+            <input type="text" id="depositmoneys" placeholder="Digita la cantidad a depositar">
+        </div>
+        <div class="button-balance">
+            <button onclick="deposit()">Depositar</button>
+        </div>
+
+        <div class="balance-body">
+            <h5 class="balance-title">RETIRAR</h5>
+            <p class="balance-text"><strong><span id="nombre-usuario"></span></strong>Dinero en efectivo</p>
+            <input type="text" id="withdrawmoneys" placeholder="Digita la cantidad a retirar">
+        </div>
+        <div class="button-balance">
+            <button onclick="withdraw()">Retirar</button>
+        </div>
+    </div>
+    
+    
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="cajero.js">
+
+    </script>
+
+</body>
+
+</html>
